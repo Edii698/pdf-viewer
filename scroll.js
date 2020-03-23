@@ -13,7 +13,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
 function handleIntersect(entries) {
   if (entries[0].isIntersecting && startingPost <= 100) {
-    console.log("something is intersecting with the viewport");
     startingPost = startingPost + 10;
     getData();
   }

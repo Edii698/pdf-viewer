@@ -1,7 +1,6 @@
 const toggler = document.getElementsByClassName("folder-closed-icon");
 
 function toggleClass() {
-  console.log("logging this: ", this);
   this.parentElement.querySelector(".nested").classList.toggle("active");
   this.classList.toggle("folder-open-icon");
 }
